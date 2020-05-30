@@ -1,0 +1,16 @@
+object filmhall extends App{
+
+def attendees(tprice:Int)=120 + (15-tprice)/5*20
+
+def revenue(tprice:Int)=attendees(tprice)*tprice
+
+def cost(tprice:Int)=3*attendees(tprice) + 500
+
+def profit(tprice:Int)=revenue(tprice)-cost(tprice)
+
+println(profit(5));
+println(profit(10));
+println(profit(15)); 
+println(profit(20));
+
+}
